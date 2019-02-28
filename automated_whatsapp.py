@@ -6,10 +6,10 @@ import time
 
 driver = webdriver.Firefox()
 driver.get("https://web.whatsapp.com/")
-target = "'Sushil CSE'"
+target = "'Your Friends name'"
 xpath = '//span[@title='+target+']'
 driver.find_element(By.XPATH, xpath).click()
-string = 'kaha hai?'
+string = 'Your message'
 tb_id = "'_2S1VP copyable-text selectable-text'"
 input_box =  driver.find_element(By.XPATH, '//div[@class='+tb_id+']')
 for i in range(100):
